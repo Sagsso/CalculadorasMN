@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container-app {
+    display: flex;
+}
+
+aside {
+    width: 20vw;
+    height: 100vh;
+    background-color: #30475e;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        color: #30475e;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-weight: 900;
+        height: fit-content;
+        width: 100%;
+        height: 50px;
+        min-height: 50px;
+        // padding: 15px 0px;
+        background-color: #df6c15;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        width: 100%;
+        height: auto;
+        li {
+            width: 100%;
+            height: fit-content;
+            padding: 12px;
+            color: white;
+            background-color: #f66d02;
+            font-family: Helvetica;
+            font-size: 14px;
+            font-weight: 700;
+            // border-bottom: 1px solid #00a8cc;
+            margin-bottom: 3px;
+            text-align: center;
+            
+        }
+        li:hover{
+                background-color: #fa9a51;
+            }
+    }
+}
+
+.calculator {
+    width: 80vw;
+    height: 100vh;
+    max-height: 100vh;
+    // overflow: auto;
+    // background-color: #ffffff;
+    // padding: 0;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+
+        // .container {
+        //     height: 100%;
+        //     width: 100%;
+        // }
+}

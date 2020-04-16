@@ -1,0 +1,19 @@
+<div class="calculator__name">{{calculator.name}}</div>
+
+<div class="container">
+
+    <p>{{calculator.description}}</p>
+
+    <div class="img" *ngIf="calculator.images.length>0">
+        <img  *ngFor="let image of calculator.images" [src]=[image] alt="img">
+    </div>
+    <div *ngIf="calculator.downloadLink.length == 1" class="container_download"> 
+        <a *ngFor="let link of calculator.downloadLink" class="myButton" [href]=link
+            download=''>Descargar</a>
+    </div>
+    <div *ngIf="calculator.downloadLink.length>1" class="container_download"> 
+        <a *ngFor="let link of calculator.downloadLink" class="myButton" [href]=link
+            download=''>Descargar {{link.substr(0, link.length - 4).substr(8)}}</a>
+    </div>
+
+</div>

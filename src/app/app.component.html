@@ -1,0 +1,13 @@
+<div class="container-app">
+  <aside>
+  <div class="title" (click)="goHome()">CALCULADORAS</div>
+  <ul>
+    <li *ngFor="let calc of calculatorsList" (click)="calculatorClick(calc.route)"  [attr.data-name]="calc.route">{{calc.title}}</li>
+  </ul>
+  </aside>
+  <div class="calculator">
+    <!-- <div class="container"> -->
+      <router-outlet></router-outlet>
+    <!-- </div> -->
+  </div>
+</div>
