@@ -24,7 +24,11 @@ export class AppComponent {
 	{ route: 'montecarlo', title: 'Método de Montecarlo' },
 	{ route: 'derivadas', title: 'Derivadas' },
 	{ route: 'evaluador', title: 'Evaluador' },	
-	{ route: 'graficador', title: 'Graficador' }
+	{ route: 'graficador', title: 'Graficador' },
+	{ route: 'operacionesmatrices', title: 'Operaciones de Matrices' },
+	{ route: 'gaussjordan', title: 'Gauss Jordan' },
+	{ route: 'curvas', title: 'Ajuste de Curvas' },
+	{ route: 'documentacion', title: 'Documentación' }
   ];
 
 

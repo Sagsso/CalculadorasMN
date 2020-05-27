@@ -1,19 +1,20 @@
-<div class="calculator__name">{{calculator.name}}</div>
+<div class="calculator__name">MÉTODOS NUMÉRICOS</div>
 
 <div class="container">
+    <div class="myContainer">
+        <div class="text">
+            <h1>{{calculator.name}}</h1>
+            <p>{{calculator.description}}</p>
+        </div>
+        <div *ngIf="calculator.downloadLink.length == 1" class="container_download"> 
+            <a *ngFor="let link of calculator.downloadLink" class="myButton" [href]=link
+                download=''>Descargar</a>
+        </div>
+        <div *ngIf="calculator.downloadLink.length>1" class="container_download"> 
+            <a *ngFor="let link of calculator.downloadLink" class="myButton" [href]=link
+                download=''>Descargar {{link.substr(0, link.length - 4).substr(8)}}</a>
+        </div>
+    </div>
 
-    <p>{{calculator.description}}</p>
-
-    <div class="img" *ngIf="calculator.images.length>0">
-        <img  *ngFor="let image of calculator.images" [src]=[image] alt="img">
-    </div>
-    <div *ngIf="calculator.downloadLink.length == 1" class="container_download"> 
-        <a *ngFor="let link of calculator.downloadLink" class="myButton" [href]=link
-            download=''>Descargar</a>
-    </div>
-    <div *ngIf="calculator.downloadLink.length>1" class="container_download"> 
-        <a *ngFor="let link of calculator.downloadLink" class="myButton" [href]=link
-            download=''>Descargar {{link.substr(0, link.length - 4).substr(8)}}</a>
-    </div>
 
 </div>

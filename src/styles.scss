@@ -20,16 +20,16 @@ aside {
     align-items: center;
 
     .title {
-        color: #30475e;
-        font-family: Helvetica;
-        font-size: 16px;
+        color: #ffffff;
+        font-family: Poppins;
+        font-size: 24px;
         font-weight: 900;
         height: fit-content;
         width: 100%;
         height: 50px;
         min-height: 50px;
         // padding: 15px 0px;
-        background-color: #df6c15;
+        background-color: #000839;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -45,11 +45,11 @@ aside {
             padding: 12px;
             color: white;
             background-color: #f66d02;
-            font-family: Helvetica;
+            font-family: Poppins;
             font-size: 14px;
-            font-weight: 700;
+            font-weight: 500;
             // border-bottom: 1px solid #00a8cc;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
             text-align: center;
             
         }
